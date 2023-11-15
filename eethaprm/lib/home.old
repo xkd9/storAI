@@ -1,0 +1,22 @@
+import 'package:flutter/material.dart';
+
+class HomeRoute extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 60),
+        width: double.infinity,
+        height: double.infinity,
+        decoration: const BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage("assets/images/water.jpeg"),
+            fit: BoxFit.cover),
+            ),
+        child: Text('Hello, How are you?',
+                  textAlign: TextAlign.center,
+                  overflow: TextOverflow.ellipsis,
+                  style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 32.0),
+            )
+    );
+  }
+}

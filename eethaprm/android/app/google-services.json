@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "416417981791",
+    "project_id": "eetha-37cb1",
+    "storage_bucket": "eetha-37cb1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:416417981791:android:08b4cd84ae8d5e9e3242ea",
+        "android_client_info": {
+          "package_name": "com.example.eethaprm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "416417981791-q08prrshcbmjplk59a1j46mivme8f80t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2_jXdN0c3gxYB5YST5Ua8fXtBg85xzUk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "416417981791-q08prrshcbmjplk59a1j46mivme8f80t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

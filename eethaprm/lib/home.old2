@@ -1,0 +1,37 @@
+import 'package:flutter/material.dart';
+import 'model/category.dart';
+
+class HomeRoute extends StatelessWidget {
+  final Category category = Category();
+  @override
+  Widget build(BuildContext context) {
+    final Categories = category.categories();
+    var categoryKeys = Categories.keys.toList();
+    return Container(
+        color: Colors.blueAccent[100],
+        width: double.infinity,
+        height: double.infinity,
+        child: GridView.builder(
+          shrinkWrap: true,
+          itemCount: categoryKeys.length,
+          padding: const EdgeInsets.symmetric(horizontal: 30),
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 3,
+                  childAspectRatio: 1.0,
+                  crossAxisSpacing: 0.0,
+                  mainAxisSpacing: 50,
+                  mainAxisExtent: 150,
+                ),
+          itemBuilder: (ctx, i) {
+            return new Card(
+              color: Colors.blueAccent[75],
+              child: IconButton(
+                icon: Categories[categoryKeys[i]]!,
+                onPressed: () {},
+              ),
+            );
+          }
+          ),
+        );
+  }
+}

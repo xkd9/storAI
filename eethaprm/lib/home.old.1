@@ -1,0 +1,27 @@
+import 'package:flutter/material.dart';
+import 'model/category.dart';
+
+class HomeRoute extends StatelessWidget {
+  final Category category = Category();
+  @override
+  Widget build(BuildContext context) {
+    final Categories = category.categories();
+    var categoryKeys = Categories.keys.toList();
+    return Container(
+        width: double.infinity,
+        height: double.infinity,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: List.generate(categoryKeys.length, (index) {
+            return new Card(
+              child: IconButton(
+                icon: Categories[categoryKeys[index]]!,
+                onPressed: () {},
+              ),
+            );
+          }
+          ),
+        ),
+      );
+  }
+}
